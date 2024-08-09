@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* default codes */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.common-font {
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+.common-description {
+  font-size: 16px;
+  font-weight: 550;
+}
+
+/* default codes */
+
+/* header css */
+.nav-container {
+  background-color: #fff;
+  box-shadow: 1px 0px 4px #0afffb;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.special-g {
+  color: #b8698e;
+}
+.nav-logo img,
+h1 {
+  padding: 0.5rem;
+}
+.nav-items li {
+  padding: 1rem;
+  font-size: 17px;
+  font-weight: 500;
+  color: #3c354f;
+}
+.nav-links {
+  background-color: #08fff9;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+.nav-links i {
+  font-size: 18px;
+}
+.red-youtube {
+  color: #f00044;
+}
+.nav-links li,
+i {
+  padding: 0.5rem;
+}
+.banner-section {
+  justify-content: space-between;
+}
+.banner-content-container {
+  width: 70%;
+  height: 450px;
+  background-image: url("../images/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner-image {
+  width: 50%;
+}
+.banner-image img {
+  width: 75%;
+}
+.banner-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0b0223;
+}
+.banner-subtitle {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #d664cf;
+}
+.extra-content i,
+p {
+  color: #534c64;
+}
+.primary-btn {
+  padding: 10px 1.5rem;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #ff42a5;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 10px;
+}
+.secondary-btn {
+  padding: 10px 1.5rem;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #4ec5f7;
+  border: none;
+  border-radius: 1.5rem;
+  margin-top: 10px;
+}
+/* header css */
+
+/* media queries for small devices */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .nav-items {
+    flex-direction: column;
+  }
+  .banner-section {
+    flex-direction: column-reverse;
+  }
+  .banner-content-container,
+  .banner-image {
+    width: 100%;
+  }
+  .banner-content-container{
+    background-size: auto;
+  }
+  .banner-image img {
+    width: 100%;
+  }
+}
