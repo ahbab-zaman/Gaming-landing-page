@@ -67,7 +67,7 @@ i {
 }
 .banner-content-container {
   width: 70%;
-  height: 450px;
+  height: 375px;
   background-image: url("../images/Group\ 14.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -117,11 +117,118 @@ p {
 }
 /* header css */
 
+
+/* main css */
+
+/* gamer css */
+
+.gamer{
+  background-color: #fff9fc;
+}
+.gamer-container{
+  justify-content: space-between;
+  gap: 8rem;
+  padding: 2rem;
+}
+.gamer-image{
+  width: 130%;
+}
+.gamer-image img{
+  width: 120%;
+}
+.gamer-content{
+  text-align: right;
+}
+.gamer-title{
+  color: #c84ec0;
+  font-size: 2rem;
+  font-weight: 750;
+}
+.gamer-description{
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+.gamer-content button{
+  margin-bottom: 10px;
+}
+.gamer-sub-description{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #534C64;
+}
+.gamer-subtitle{
+  font-size: 20px;
+  font-weight: 700;
+  color: #534C64;
+}
+
+/* gamer css */
+
+/* online-games css */
+
+.online-games{
+  flex-direction: column;
+  padding: 3rem;
+}
+.online-games-content{
+  margin-bottom: 1rem;
+}
+.online-games-tile{
+  font-size: 28px;
+  font-weight: 700;
+}
+.funny{
+color: #F948B2;
+}
+.online-games-images{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.online-games-row img{
+  width: 100%;
+  margin-bottom: 10px
+}
+.online-game-relative{
+  position: relative;
+}
+.online-game-relative img{
+  filter: brightness(50%);
+}
+.game-inner-content img{
+  width: 40%;
+  filter: brightness(200%);
+}
+.game-inner-content p{
+  color:#FF42A5 ;
+  font-weight: 600;
+}
+.game-inner-content{
+  position: absolute;
+  top: 40%;
+  right:32%;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* online-games css */
+
+/* main css */
+
 /* media queries for small devices */
 @media screen and (max-width: 576px) {
+  .container{
+    width: auto;
+  }
   .navbar,
-  .nav-items {
+  .nav-items,
+  .gamer-container {
     flex-direction: column;
+  }
+  .nav-container {
+    box-shadow: none;
   }
   .banner-section {
     flex-direction: column-reverse;
@@ -136,4 +243,26 @@ p {
   .banner-image img {
     width: 100%;
   }
+  .gamer-container{
+    gap: 2rem;
+  }
+  .gamer-content{
+    text-align: center;
+  }
+  .gamer-image{
+    width: 100%;
+  }
+  .gamer-image img{
+    width: 100%;
+  }
+  .gamer-container {
+    padding: 1rem;
+  }
+  .online-games-images{
+    grid-template-columns: 1fr;
+  }
+  .online-games-content{
+    text-align: center;
+  }
+  
 }
